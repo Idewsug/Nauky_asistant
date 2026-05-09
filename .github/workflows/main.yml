@@ -1,4 +1,4 @@
-name: build Nauky APK
+name: Build Nauky APK
 on: [push, workflow_dispatch]
 
 jobs:
