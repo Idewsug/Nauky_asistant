@@ -21,6 +21,11 @@ jobs:
         
     - name: Build APK
       run: buildozer android debug
+      env:
+        ANDROID_SDK_LICENSE: yes
         
     - name: Upload APK
-      uses: actions/upload-artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: Nauky-APK
+        path: bin/*.apk
